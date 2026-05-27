@@ -1,0 +1,11 @@
+{
+  "x": 710,
+  "y": 288,
+  "topmost": false,
+  "session_count": 0,
+  "minutes": {
+    "work": 25,
+    "short_break": 5,
+    "long_break": 15
+  }
+}
