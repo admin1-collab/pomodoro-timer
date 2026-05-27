@@ -8,16 +8,16 @@ from pathlib import Path
 CONFIG_PATH = Path(__file__).parent / "pomodoro_config.json"
 
 MODES = {
-    "work":      {"label": "工作中", "minutes": 25, "color": "#4A90D9", "accent": "#357ABD"},
-    "short_break": {"label": "短休息", "minutes": 5,  "color": "#5DADE2", "accent": "#4A9AD5"},
-    "long_break":  {"label": "长休息", "minutes": 15, "color": "#2471A3", "accent": "#1B5E8A"},
+    "work":      {"label": "工作中", "minutes": 25, "color": "#E74C3C", "accent": "#C0392B"},
+    "short_break": {"label": "短休息", "minutes": 5,  "color": "#E67E22", "accent": "#D35400"},
+    "long_break":  {"label": "长休息", "minutes": 15, "color": "#C0392B", "accent": "#A93226"},
 }
 
-BG = "#1A2332"
+BG = "#1E1A1A"
 FG = "#FFFFFF"
-FG_DIM = "#8899AA"
-BTN_BG = "#243447"
-BTN_ACTIVE = "#2C4A6E"
+FG_DIM = "#AA9999"
+BTN_BG = "#342424"
+BTN_ACTIVE = "#4A2E2E"
 
 class PomodoroApp:
     def __init__(self):
@@ -211,7 +211,7 @@ class PomodoroApp:
         reset_btn.bind("<Button-1>", lambda e: self.reset())
 
         # -- bottom hint --
-        hint = tk.Label(self.root, text="右键菜单 | 拖动窗口", bg=BG, fg="#4A5568",
+        hint = tk.Label(self.root, text="右键菜单 | 拖动窗口", bg=BG, fg="#5A4444",
                         font=("Segoe UI", 8))
         hint.pack(side=tk.BOTTOM, pady=10)
 
